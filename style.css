@@ -129,7 +129,8 @@ a{
 }
 
 .fixed-header nav a.active,
-.fixed-header nav a:focus{
+.fixed-header nav a:focus,
+.fixed-header nav a.active{
     color: #ff00ee !important;
 }
 
@@ -220,7 +221,7 @@ img.w-30vw{
 .card{
     background-color: #262222 !important;
     color: white !important;
-    border: 2px solid #ff00ee !important;
+    border: 2px solid #dddddd94 !important; 
 }
 
 /* typewriter css start */
@@ -286,7 +287,7 @@ img.w-30vw{
 
  /* projects css start */
 .projects div div.shadow{
-    border: 2px solid #ff00ee !important;
+    border: 2px solid #dddddd94 !important; 
     overflow: hidden;
 }
 .projects div{
@@ -302,12 +303,12 @@ img.w-30vw{
 }
 .projects div small{
     font-size: 10px !important;
-    color: #fffb00;
+    color: #ff00ee;
 }
 .projects div a.title{
     color: #fff;
  text-decoration: none !important;
- font-weight: 600;
+ font-weight: bold;
 }
 .projects div a.title:hover{
     color: #ff00ee;
