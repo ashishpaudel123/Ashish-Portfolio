@@ -132,6 +132,32 @@ a{
 .fixed-header nav a:focus{
     color: #ff00ee !important;
 }
+
+@media (max-width:471px) {
+    .myname{
+        font-size: 43px;
+    }
+    .text{
+        font-size: 22px !important;
+    }
+}
+@media (max-width:410px) {
+    .myname{
+        font-size: 37px;
+    }
+    .text{
+        font-size: 22px !important;
+    }
+}
+@media (max-width:355px) {
+    .myname{
+        font-size: 31px;
+    }
+    .text{
+        font-size: 20px !important;
+    }
+}
+
 /* header css end */
 
 
@@ -150,7 +176,7 @@ a{
     flex-wrap: wrap-reverse;
 }
 
-@media (max-width:768px) {
+@media (max-width:600px) {
     .myphoto img{
         width: 60vw !important;
     }
