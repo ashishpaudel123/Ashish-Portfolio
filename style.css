@@ -167,16 +167,16 @@ a{
 /* hero ph0to css start */
 @keyframes box-glow {
     0% {
-        box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 30px #ff005e, 0 0 50px #ff005e;
+        box-shadow: 0 0 5px #ff005e, 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 15px #ff005e, 0 0 30px #ff005e;
     }
     100% {
-        box-shadow: 0 0 5px #0556679f, 0 0 10px #0556679f, 0 0 20px #0556679f, 0 0 30px #0556679f, 0 0 50px #00d5ffa1;
+        box-shadow: 0 0 5px #0556679f, 0 0 5px #0556679f, 0 0 10px #0556679f, 0 0 15px #0556679f, 0 0 30px #00d5ffa1;
     }
 }
 .myphoto{
     border-radius: 50%;
     filter: drop-shadow(0 0 8rem #ff00ee);
-    box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 50px #ff005e;
+    box-shadow: 0 0 5px #ff005e, 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 15px #ff005e, 0 0 20px #ff005e;
     animation: box-glow 1.5s infinite alternate;
 }
 .myphoto img{
@@ -360,7 +360,7 @@ img.w-30vw{
 .r-filter{
     filter: drop-shadow(0 0 8rem #ff00ee);
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
-    animation: about-box-glow 2.5s infinite alternate;
+    /* animation: about-box-glow 2.5s infinite alternate; */
 }
 .shadow-red{
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
@@ -435,5 +435,15 @@ footer a i{
     font-size: 17px;
     color: white;
     animation: icon-glow 1.5s infinite alternate;
+}
+
+
+
+
+
+@media (min-width:768px) {
+    .md-px-5{
+        padding: 0 25px ;
+    }
 }
 
