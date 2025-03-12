@@ -358,7 +358,7 @@ img.w-30vw{
     }
 }
 .r-filter{
-    filter: drop-shadow(0 0 8rem #ff00ee);
+    /* filter: drop-shadow(0 0 8rem #ff00ee); */
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
     /* animation: about-box-glow 2.5s infinite alternate; */
 }
