@@ -91,16 +91,16 @@ a{
   .neon-text {
     font-size: 4rem;
     color: red;
-    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    text-shadow: 0 0 5px #ff005e, 0 0 7px #ff005e, 0 0 9px #ff005e, 0 0 11px #ff005e, 0 0 13px #ff005e;
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 30px #ff005e, 0 0 50px #ff005e;
+        text-shadow: 0 0 5px #ff005e, 0 0 7px #ff005e, 0 0 9px #ff005e, 0 0 11px #ff005e, 0 0 13px #ff005e;
     }
     100% {
-        text-shadow: 0 0 5px #0556679f, 0 0 10px #0556679f, 0 0 20px #0556679f, 0 0 30px #0556679f, 0 0 50px #00d5ffa1;
+        text-shadow: 0 0 5px #0556679f, 0 0 7px #0556679f, 0 0 9px #0556679f, 0 0 11px #0556679f, 0 0 13px #00d5ffa1;
     }
 }
 /* header css start */
@@ -446,4 +446,25 @@ footer a i{
         padding: 0 25px ;
     }
 }
+@media (max-width:768px) {
+    p.mobile-margin {
+        margin: 15px 0px !important;
+    }
+}
+
+@media (max-width:700px) {
+    img.w-30vw{
+        width: 40vw !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    img.w-30vw{
+        width: 10vw !important;
+    }
+    .myphoto img{
+        width: 20vw !important;
+    }
+}
+
 
