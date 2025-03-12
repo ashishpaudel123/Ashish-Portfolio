@@ -295,33 +295,28 @@
     <!-- contact start -->
     <section id="contact" class="container">
     <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">Contact</span><span class="t-orange"> Me</span></h1>
-    <form class="row g-3 contact rounded" action="sendEmail.php" method="POST">
+      <form class="row g-3 contact rounded" id="form">
         <div class="col-md-6">
-          <label for="validationServer01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationServer01" required>
-        </div>
-        <div class="col-md-6">
-          <label for="validationServer02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationServer02" required>
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-control" type="text" name="subject" id="subject" required>
         </div>
         <div class="col-md-6">
-          <label for="validationServerUsername" class="form-label">Mobile</label>
-          <div class="input-group has-validation">
-            <input type="text" class="form-control " id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-          </div>
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" type="text" name="name" id="name" required>
         </div>
         <div class="col-md-6">
-          <label for="validationServer03" class="form-label">Email</label>
-          <input type="email" class="form-control " id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" type="text" name="email" id="email" required>
         </div>
-        <div class="col-12 m-0 pt-0">
-          <label for="validationServer05" class="form-label"></label>
-          <textarea class="form-control" placeholder="Write a message" rows="5" required></textarea>
+        <div class="col-md-6">
+          <label class="form-label" for="mobile">Mobile</label>
+          <input class="form-control" type="text" name="mobile" id="mobile" required>
         </div>
-        
-        <div class="col-12 text-center">
-          <button class="border-d rounded px-3 py-2 text-white fw-bold b-orange" type="submit">Send Message</button>
+        <div class="col-12">
+          <textarea class="form-control" name="message" id="message" placeholder="Write a message" rows="5" required></textarea>
         </div>
+      
+        <button class="border-d rounded px-3 py-2 text-white fw-bold b-orange" type="submit" id="button" value="Send Email" >Send Email</button>
       </form>
     </section>
     <!-- contact end -->
@@ -340,5 +335,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "HIMST6dC7WQaNdyon",
+      });
+   })();
+</script>
+<script src="mail.js"></script>
 </body>
 </html>
+
+
+
+
+
+  
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('HIMST6dC7WQaNdyon')
+  </script>
