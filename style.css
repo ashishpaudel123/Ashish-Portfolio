@@ -272,6 +272,7 @@ img.w-30vw{
 .card-paragraph{
     color:#00d5ff !important ;
     font-size: 13px;
+    text-align: justify !important;
 }
 
 /* typewriter css start */
