@@ -366,7 +366,7 @@ img.w-30vw{
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
 }
 .about-us-box {
-    margin: 15px 0px;
+    margin: 30px 0px;
     transition: 0.3s;
 }
 .about-us-box:hover{
