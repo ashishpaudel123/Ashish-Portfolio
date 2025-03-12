@@ -19,7 +19,9 @@ li{
 a{
     text-decoration: none !important;
 }
-
+.text-justify{
+    text-align: justify;
+}
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -88,17 +90,17 @@ a{
   }
   .neon-text {
     font-size: 4rem;
-    color: #fff;
+    color: red;
     text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 30px #ff005e, 0 0 50px #ff005e;
     }
     100% {
-        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+        text-shadow: 0 0 5px #0556679f, 0 0 10px #0556679f, 0 0 20px #0556679f, 0 0 30px #0556679f, 0 0 50px #00d5ffa1;
     }
 }
 /* header css start */
@@ -163,15 +165,24 @@ a{
 
 
 /* hero ph0to css start */
+@keyframes box-glow {
+    0% {
+        box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 30px #ff005e, 0 0 50px #ff005e;
+    }
+    100% {
+        box-shadow: 0 0 5px #0556679f, 0 0 10px #0556679f, 0 0 20px #0556679f, 0 0 30px #0556679f, 0 0 50px #00d5ffa1;
+    }
+}
 .myphoto{
     border-radius: 50%;
     filter: drop-shadow(0 0 8rem #ff00ee);
+    box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 50px #ff005e;
+    animation: box-glow 1.5s infinite alternate;
 }
 .myphoto img{
     width: 30vw !important;
     border-radius: 50%;
     border: 2px solid #ddd;
-    background: radial-gradient(rgba(255, 0, 238, 0.162),rgba(255, 0, 238, 0.534),rgba(255, 0, 238, 0.447),rgba(255, 0, 238, 0.151));
 }
 .f{
     flex-wrap: wrap-reverse;
@@ -185,8 +196,20 @@ a{
 /* hero ph0to css end */
 
 /* about ph0to css start */
+#aboutphoto{
+    border-radius: 50%;
+    filter: drop-shadow(0 0 8rem #ff00ee);
+    
+}
+#aboutphoto img{
+    border-radius: 50%;
+    /* border: 2px solid #ddd; */
+    box-shadow: 0 0 5px #ff005e, 0 0 8px #ff005e, 0 0 10px #ff005e, 0 0 12px #ff005e, 0 0 24px #ff005e;
+
+}
+
 img.w-30vw{
-    width: 30vw !important;
+    width: 20vw !important;
 }
 /* about ph0to css end */
 
@@ -197,22 +220,36 @@ img.w-30vw{
     padding: 10px 35px;
     border-radius: 4px;
     color: #ffffffdf;
+    transition: 0.5s;
     background:linear-gradient(#ff00ee, #000000);
 }
 .hire a:hover{
     color: #fff;
     opacity: 85%;
+    border: none;
+    box-shadow: 0 0 5px #ff005e, 0 0 8px #ff005e, 0 0 10px #ff005e, 0 0 12px #ff005e, 0 0 24px #ff005e;
+
 }
 /* hire and let's talk css end */
 
 /* social icon start */
+@keyframes icon-glow {
+    0% {
+        box-shadow: 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 6px #ff005e, 0 0 8px #ff005e, 0 0 10px #ff005e;
+    }
+    100% {
+        box-shadow: 0 0 2px #079ebc9f, 0 0 4px #09d6469f, 0 0 6px #05ec979f, 0 0 8px #17c7ea9f, 0 0 10px #00d5ffe0;
+    }
+}
 .social-icons a i{
     font-size: 18px;
     padding: 12px;
-    border: 2px solid #dddddd94; 
+    box-shadow: 0 0 5px #ff005e, 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 6px #ff005e, 0 0 8px #ff005e;
     border-radius: 50%;
     color: #ffffffdf;
     background:linear-gradient(#ff00ee, #000000);
+    animation: icon-glow 1.5s infinite alternate;
+
 }
 .social-icons a i:hover{
     background:linear-gradient(#ff00ee8c, #00000088);
@@ -221,7 +258,20 @@ img.w-30vw{
 .card{
     background-color: #262222 !important;
     color: white !important;
-    border: 2px solid #dddddd94 !important; 
+    margin: 20px;
+    padding: 25px;
+}
+.card:hover{
+    box-shadow: 0 0 5px #ff005e, 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 6px #ff005e, 0 0 8px #ff005e;
+    animation: icon-glow 1.5s infinite alternate;
+}
+
+.card-title{
+    font-size: 20px;
+}
+.card-paragraph{
+    color:#00d5ff !important ;
+    font-size: 13px;
 }
 
 /* typewriter css start */
@@ -285,9 +335,57 @@ img.w-30vw{
 }
 /* linear progess bar css end */
 
+
+/* about css start */
+@keyframes about-box-glow {
+    0% {
+        box-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 10px #ff005e, 0 0 10px #ff005e, 0 0 10px #ff005e;
+    }
+    50%{
+        box-shadow: 0 0 5px #22ff00, 0 0 10px #22ff00, 0 0 10px #22ff00, 0 0 10px #22ff00, 0 0 10px #22ff00;
+    }
+    100% {
+        box-shadow: 0 0 5px #00d5ff9f, 0 0 10px #00d5ff9f, 0 0 10px #00d5ff9f, 0 0 10px #00d5ff9f, 0 0 10px #00d5ffa1;
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+.r-filter{
+    filter: drop-shadow(0 0 8rem #ff00ee);
+    box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
+    animation: about-box-glow 2.5s infinite alternate;
+}
+.shadow-red{
+    box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
+}
+.about-us-box {
+    margin: 15px 0px;
+    transition: 0.3s;
+}
+.about-us-box:hover{
+    position: relative;
+    margin-top: -10px;
+    animation: rotate 1s ease-in-out alternate ;
+}
+.about-us-box:hover p {
+    color: white !important;
+}
+.about .about-description :hover .shadow-red{
+box-shadow: 0 0 1px #00d5ff9f, 0 0 2px #00d5ff9f, 0 0 3px #00d5ff9f, 0 0 4px #00d5ff9f, 0 0 5px #00d5ff9f;
+
+}
+/* about css end */
+
+
  /* projects css start */
 .projects div div.shadow{
-    border: 2px solid #dddddd94 !important; 
+    box-shadow: 0 0 1px #00d5ff9f, 0 0 2px #00d5ff9f, 0 0 3px #00d5ff9f, 0 0 4px #00d5ff9f, 0 0 5px #00d5ff9f !important;
     overflow: hidden;
 }
 .projects div{
@@ -335,5 +433,6 @@ footer a i{
     padding: 15px;
     font-size: 17px;
     color: white;
+    animation: icon-glow 1.5s infinite alternate;
 }
 

@@ -61,7 +61,7 @@
      <div class="container">
         <div class="d-flex align-items-center justify-content-center flex-wrap-reverse flex-lg-nowrap">
             <div>
-                <p class="font-50 poppins-semibold m-0 text-light myname">I'm Ashish Paudel</p>
+                <p class="font-50 poppins-semibold m-0 text-light neon-text myname">I'm Ashish Paudel</p>
                 <div class="wrapper p-0">
                     <div class="text" id="animatedText"></div>
                     <div class="cursor" id="cursor"></div>
@@ -71,8 +71,8 @@
                     Explore my work and let’s create something amazing together!</p>
                 <!-- hire and talk button start -->
                 <div class="hire d-flex gap-4">
-                    <a href="#"><span>Hire ME</span></a>
-                    <a  href="#contact">Let's Talk</a>
+                    <a class="fw-bold" href="https://ashishpaudel123.github.io/MY-CV/" target="_blank"><span>MY CV</span></a>
+                    <a class="fw-bold" href="#contact">Let's Talk</a>
                 </div>
             
                 <!-- hire and talk button end -->
@@ -92,19 +92,46 @@
     <!-- hero end -->
     
     <!-- about us start -->
-    <section class="container my-5" id="about">
+    <section class="container about my-5" id="about">
         <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">About</span><span class="t-orange"> Me</span></h1>
-    <div class="myphoto text-center"><img class="w-30vw" src="./img/hero.png" alt="myphoto"></div>
-    <p class="fw-bold font-29 text-light text-center pt-4">Frontend Developer</p>
-    <p class="text-light text-center">Hey there! 👋 I'm Ashish Paudel, a passionate Frontend Developer who loves bringing ideas to life through clean, modern, and interactive web experiences. With expertise in HTML, CSS, JavaScript, React.js, Next.js, Tailwind, and Bootstrap, I specialize in crafting seamless, user-friendly, and visually stunning websites.        I believe in code that speaks for itself—clean, efficient, and built to impress. Whether it’s a simple landing page or a complex web application, I bring a problem-solving mindset and a keen eye for detail to every project. <br>
-        
-        Let’s collaborate and build something amazing together! 🚀✨</p>
+        <div class="row align-items-start">
+            <div class="col-md-5">
+                <div id="aboutphoto" class="text-center"><img class="w-30vw" src="./img/hero.png" alt="myphoto"></div>
+                <!-- <p class="fw-bold font-29 text-light text-center pt-4">Frontend Developer</p>             -->
+            </div>
+            <div class="col-md-6 about-description rounded p-4">
+                <p class="text-light text-justify m-0">Hey there! 👋 I'm Ashish Paudel, a passionate Frontend Developer who loves bringing ideas to life through clean, modern, and interactive web experiences. I believe in code that speaks for itself—clean, efficient, and built to impress. Whether it’s a simple landing page or a complex web application, I bring a problem-solving mindset and a keen eye for detail to every project. <br>
+                Let’s collaborate and build something amazing together!</p>
+            </div>
+        </div>
     <div class="text-start">
     <p class="text-light fw-bold text-center fs-3 mt-5">Why Work With Me?</p>
-    <p class="text-light text-center m-0"></p><span class="t-orange fw-bold">🚀 Pixel-Perfect Designs </span><span class="text-white">– I focus on aesthetics and functionality to deliver visually appealing interfaces.</span>
-    <p class="text-light text-center m-0"></p><span class="t-orange fw-bold">⚡ Performance & Speed</span><span  class="text-white"> – I build fast, responsive, and scalable applications for a smooth user experience.</span>
-    <p class="text-light text-center m-0"></p><span class="t-orange fw-bold">🎨 Creative & Precise</span><span  class="text-white"> – Every project I work on is a blend of innovation, design, and attention to detail.</span>
-    <p class="text-light text-center m-0"></p><span class="t-orange fw-bold">📚 Continuous Learning</span><span  class="text-white"> – I stay updated with the latest trends to keep my work fresh and cutting-edge.</span>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="r-filter about-us-box p-2 text-light rounded">
+                    <p class="text-center t-orange fw-bold">Pixel-Perfect Designs </p>
+                    <p class="text-center">I focus on aesthetics and functionality to deliver visually appealing interfaces.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="r-filter about-us-box p-2 text-light rounded">
+                <p class="t-orange text-center fw-bold">Performance & Speed</p>
+                <p  class="text-center text-white">I build fast, responsive, and scalable applications for a smooth user experience.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="r-filter about-us-box p-2 text-light rounded">
+                <p class="t-orange text-center fw-bold">Creative & Precise</p>
+                <p  class="text-white text-center">Every project I work on is a blend of innovation, design, and attention to detail.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="r-filter about-us-box p-2 text-light rounded">
+                    <p class="t-orange text-center fw-bold">Continuous Learning</p>
+                    <p class="text-white text-center">I stay updated with the latest trends to keep my work fresh and cutting-edge.</p>
+            </div>
+        </div>
+    </div>
     </div>
     </section>
     <!-- about us end -->
@@ -113,39 +140,39 @@
     <section class="container my-5" id="education">
     <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">My</span><span class="t-orange"> Education</span></h1>
     <div class="row">
-        <div class="col-12 mt-2 col-md-6">
-            <div class="card p-3">
+        <div class="col-12  col-md-6">
+            <div class="card">
                     <small class="t-orange">2023 - Present <i class="ps-1 fa-solid fa-calendar-days"></i></small>
-                    <h4 class="card-title">📚 Himalayan Whitehouse Int'l College</h4>
-                    <p class="card-text bg-light text-black fw-bold">🎓 Bachelor in Information Technology (BIT)</p>
-                    <p class="m-0">I am currently pursuing my BIT degree, where I am gaining in-depth knowledge of programming, web development, and software engineering. My academic journey has helped me build strong problem-solving skills and stay updated with the latest technologies in the industry.<p>
+                    <h4 class="card-title m-0 ">📚 Himalayan Whitehouse Int'l College</h4>
+                    <p class="card-text bg-light text-black fw-bold m-0 my-2">🎓 Bachelor in Information Technology (BIT)</p>
+                    <p class="m-0 card-paragraph">I am currently pursuing my BIT degree, where I am gaining in-depth knowledge of programming, web development, and software engineering. My academic journey has helped me build strong problem-solving skills and stay updated with the latest technologies in the industry.<p>
             </div>
             
         </div>
         <div class="col-12 col-md-6">
-            <div class="card mt-2 p-3">
+            <div class="card">
                     <small class="t-orange">2021 - 2023 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">📚 Premier Int'l College</h4>
                     <p class="card-text bg-light text-black fw-bold">🎓 +2 in Science</p>
-                    <p class="m-0">Built a strong foundation in mathematics, computer science, and analytical thinking, which fueled my passion for technology and web development. Developed a strong foundation in computer science and mathematics, strengthening analytical thinking and logical reasoning.<p>
+                    <p class="m-0 card-paragraph">Built a strong foundation in mathematics, computer science, and analytical thinking, which fueled my passion for technology and web development. Developed a strong foundation in computer science and mathematics, strengthening analytical thinking and logical reasoning.<p>
             </div>
             
         </div>
-        <div class="col-12 mt-2 col-md-6">
-            <div class="card p-3">
+        <div class="col-12 col-md-6">
+            <div class="card">
                     <small class="t-orange">2017 - 2021 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">📚 Kanti Rajya Secondary School</h4>
                     <p class="card-text bg-light text-black fw-bold">🎓 SLC (School Leaving Certificate)</p>
-                    <p class="m-0">Completed my SLC with a focus on subjects like mathematics, science, and computer. Strengthened my critical thinking, analytical skills, and overall academic discipline, which paved the way for my higher studies.<p>
+                    <p class="m-0 card-paragraph">Completed my SLC with a focus on subjects like mathematics, science, and computer. Strengthened my critical thinking, analytical skills, and overall academic discipline, which paved the way for my higher studies.<p>
             </div>
             
         </div>
-        <div class="col-12 mt-2 col-md-6">
-            <div class="card p-3">
+        <div class="col-12 col-md-6">
+            <div class="card">
                     <small class="t-orange">2008 - 2017 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">Kalam Bam Secondary School</h4>
                     <p class="card-text bg-light text-black fw-bold">🎓 Primary Education</p>
-                    <p class="m-0">Gained fundamental knowledge in basic subjects such as mathematics, science, and languages. Developed key skills in communication, problem-solving, and teamwork that formed the foundation for my further academic journey.<p>
+                    <p class="m-0 card-paragraph">Gained fundamental knowledge in basic subjects such as mathematics, science, and languages. Developed key skills in communication, problem-solving, and teamwork that formed the foundation for my further academic journey.<p>
 
             </div>
             
@@ -159,7 +186,7 @@
         <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">My</span><span class="t-orange"> Skills</span></h1>
         <!-- progress bar start -->
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-lg-6 my-3">
                 <div class="p-4 rounded bgsec">
                    <div class="skill-wrapper">
                                       <span class="d-block float-left">HTML5</span><span class="d-block float-right">90%</span>
@@ -187,7 +214,7 @@
                                   </div>
                </div>
                </div>
-              <div class="col-lg-6 ">
+              <div class="col-lg-6 my-3">
                 <div class="p-4 bgsec rounded">
                    <div class="skill-wrapper">
                                       <span class="d-block float-left">Javascript</span><span class="d-block float-right">75%</span>
@@ -226,63 +253,63 @@
         <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">My</span><span class="t-orange"> Projects</span></h1>
         <div class="row projects">
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://shop-react-zeta.vercel.app/" target="_blank"><img class="w-100" src="./img/shopping.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Tailwind</small>
                     <a class="d-block title" href="https://shop-react-zeta.vercel.app/">Shopping Website</a>
                 </div>
             </div>
             <div class="col-md-4 ">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://lagubitta-ashish-paudels-projects.vercel.app/" target="_blank"><img class="w-100" src="./img/lagubitta.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://lagubitta-ashish-paudels-projects.vercel.app/">Lagubitta News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://bankingkhabar.vercel.app/" target="_blank"><img class="w-100" src="./img/news2.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,NEXT JS,Tailwind</small>
                     <a class="d-block title" href="https://bankingkhabar.vercel.app/">Banking News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2" >
+                <div class="shadow rounded bgsec my-3 p-2" >
                     <a href="https://ashishpaudel123.github.io/Laundary/" target="_blank"><img class="w-100" src="./img/laundary.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,NEXT JS,Tailwind</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/Laundary/">Laundary Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://ashishpaudel123.github.io/plannepal/" target="_blank"><img class="w-100" src="./img/travel.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/plannepal/">Travel Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://ashishpaudel123.github.io/Sanakisan/" target="_blank"><img class="w-100" src="./img/sanakisan.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/Sanakisan/">Sanakisan Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://ashishpaudel123.github.io/chakrapath/" target="_blank"><img class="w-100" src="./img/chakkrapath.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/chakrapath/">Chakrapath News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://ashishpaudel123.github.io/RealEstate/" target="_blank"><img class="w-100" src="./img/realestate.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/RealEstate/">Realstate Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-2 p-2">
+                <div class="shadow rounded bgsec my-3 p-2">
                     <a href="https://ashishpaudel123.github.io/kitabyatra/" target="_blank"><img class="w-100" src="./img/kitabyatra.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/kitabyatra/">KitabYatra  Website</a>
