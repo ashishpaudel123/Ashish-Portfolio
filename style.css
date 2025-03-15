@@ -280,16 +280,8 @@ img.w-30vw{
     font-size: 13px;
     text-align: justify !important;
 }
-@keyframes card-glow {
-    0% {
-        box-shadow: 0 0 1px #ff00ee, 0 0 2px #ff00ee, 0 0 3px #ff00ee, 0 0 4px #ff00ee, 0 0 5px #ff00ee;
-    }
-    100% {
-        box-shadow: 0 0 1px #079ebc9f, 0 0 2px #09d6469f, 0 0 3px #05ec979f, 0 0 4px #17c7ea9f, 0 0 5px #00d5ffe0;
-    }
-}
 .card:hover{
-    box-shadow: 0 0 5px #ff00ee, 0 0 2px #ff00ee, 0 0 4px #ff00ee, 0 0 6px #ff00ee, 0 0 8px #ff00ee;
+    box-shadow: 0 0 5px #ff00ee, 0 0 2px #ff00ee;
 }
 .card:hover p.card-paragraph{
     color:#00d5ff !important ;
@@ -376,10 +368,15 @@ img.w-30vw{
 @keyframes rotate{
     0% {
         transform: rotateZ(0deg);
+        box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
+
     }
-    100% {
+    50% {
         transform: rotateZ(5deg);
+        box-shadow: 0 0 1px #00d5ff9f, 0 0 2px #00d5ff9f, 0 0 3px #00d5ff9f, 0 0 4px #00d5ff9f, 0 0 5px #00d5ffa1;
+
     }
+    
 }
 .r-filter{
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
@@ -394,7 +391,7 @@ img.w-30vw{
 .about-us-box:hover{
     position: relative;
     margin-top: -10px;
-    animation: rotate 1s ease-in-out alternate ;
+    animation: rotate 1.5s ease-in-out alternate ;
 }
 .about-us-box:hover p {
     color: white !important;
