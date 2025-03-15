@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
@@ -12,7 +13,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- header start -->
-    <header >
+    <header>
         <nav
             class="navbar navbar-expand-lg"
         >
@@ -31,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
-                    <ul class="navbar-nav  gap-3 mt-2 ms-auto  mt-lg-0">
+                    <ul data-aos="fade-left" data-aos-duration="1000" class="navbar-nav  gap-3 mt-2 ms-auto  mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link poppins-medium hover-orange font-17" href="#home">Home</a>
                         </li>
@@ -61,13 +62,13 @@
     <section id="home" class="my-5">
      <div class="container">
         <div class="d-flex align-items-center justify-content-center flex-wrap-reverse flex-lg-nowrap">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <p class="font-50 poppins-semibold m-0 text-light mobile-margin neon-text myname">I'm Ashish Paudel</p>
                 <div class="wrapper p-0">
                     <div class="text" id="animatedText"></div>
                     <div class="cursor" id="cursor"></div>
                 </div>
-                <p class="text-dim ps-0 md-px-5 text-justify">Hello, I'm a passionate frontend developer dedicated to building sleek, responsive, and user-friendly web experiences. I specialize in crafting dynamic and visually appealing interfaces using the latest technologies, ensuring seamless performance across all devices. My goal is to merge creativity with functionality to deliver engaging digital solutions.</p>
+                <p class="text-dim ps-0 md-px-5 text-justify" >Hello, I'm a passionate frontend developer dedicated to building sleek, responsive, and user-friendly web experiences. I specialize in crafting dynamic and visually appealing interfaces using the latest technologies, ensuring seamless performance across all devices. My goal is to merge creativity with functionality to deliver engaging digital solutions.</p>
                 <!-- hire and talk button start -->
                 <div class="hire d-flex gap-4">
                     <a class="fw-bold" href="https://ashishpaudel123.github.io/MY-CV/" target="_blank"><span>MY CV</span></a>
@@ -84,7 +85,7 @@
                 </div>
                 <!-- social network icons end -->
             </div>
-            <div class="myphoto my-3"><img class="w-100" src="./img/hero.png" alt="myphoto"></div>
+            <div class="myphoto my-3" data-aos="zoom-in" data-aos-duration="2000"><img class="w-100" src="./img/hero.png" alt="myphoto"></div>
             </div>
         </div>
     </section>
@@ -93,19 +94,19 @@
     <!-- about us start -->
     <section class="container about my-5" id="about">
         <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">About</span><span class="t-orange"> Me</span></h1>
-        <div class="row align-items-start">
+        <div class="row align-items-start" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-md-5">
                 <div id="aboutphoto" class="text-center"><img class="w-30vw" src="./img/me-about.jpg" alt="myphoto"></div>
                 <!-- <p class="fw-bold font-29 text-light text-center pt-4">Frontend Developer</p>             -->
             </div>
-            <div class="col-md-6 about-description rounded p-4">
+            <div class="col-md-6 about-description rounded p-4" data-aos="fade-up" data-aos-duration="1000">
                 <p class="text-dim text-justify m-0">Hey there! I'm Ashish Paudel, a passionate Frontend Developer who loves bringing ideas to life through clean, modern, and interactive web experiences. I believe in code that speaks for itself—clean, efficient, and built to impress. Whether it’s a simple landing page or a complex web application, I bring a problem-solving mindset and a keen eye for detail to every project. <br>
                 Let’s collaborate and build something amazing together!</p>
             </div>
         </div>
     <div class="text-start">
-    <p class="text-light fw-bold text-center fs-3 mt-5">Why Work With Me?</p>
-    <div class="row my-5">
+    <p class="text-light fw-bold text-center fs-3 mt-5" data-aos="fade-up" data-aos-duration="1000">Why Work With Me?</p>
+    <div class="row my-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-md-3">
             <div class="r-filter about-us-box p-2 text-light rounded">
                     <p class="text-center t-orange fw-bold">Pixel-Perfect Designs </p>
@@ -140,7 +141,7 @@
     <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">My</span><span class="t-orange"> Education</span></h1>
     <div class="row">
         <div class="col-12  col-md-6">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                     <small class="t-orange">2023 - Present <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title m-0 ">📚 Himalayan Whitehouse Int'l College</h4>
                     <p class="card-text bg-light text-black fw-bold m-0 my-2">🎓 Bachelor in Information Technology (BIT)</p>
@@ -148,7 +149,7 @@
             </div>
             
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
             <div class="card">
                     <small class="t-orange">2021 - 2023 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">📚 Premier Int'l College</h4>
@@ -158,7 +159,7 @@
             
         </div>
         <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                     <small class="t-orange">2017 - 2021 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">📚 Kanti Rajya Secondary School</h4>
                     <p class="card-text bg-light text-black fw-bold">🎓 SLC (School Leaving Certificate)</p>
@@ -167,7 +168,7 @@
             
         </div>
         <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
                     <small class="t-orange">2008 - 2017 <i class="ps-1 fa-solid fa-calendar-days"></i></small>
                     <h4 class="card-title">Kalam Bam Secondary School</h4>
                     <p class="card-text bg-light text-black fw-bold">🎓 Primary Education</p>
@@ -186,7 +187,7 @@
         <!-- progress bar start -->
             <div class="row">
                <div class="col-lg-6 my-3">
-                <div class="p-4 rounded bgsec">
+                <div class="p-4 rounded bgsec" data-aos="fade-up" data-aos-duration="1000">
                    <div class="skill-wrapper">
                                       <span class="d-block float-left">HTML5</span><span class="d-block float-right">90%</span>
                                       <div class="progress">
@@ -214,7 +215,7 @@
                </div>
                </div>
               <div class="col-lg-6 my-3">
-                <div class="p-4 bgsec rounded">
+                <div class="p-4 bgsec rounded" data-aos="fade-up" data-aos-duration="1000">
                    <div class="skill-wrapper">
                                       <span class="d-block float-left">Javascript</span><span class="d-block float-right">75%</span>
                                       <div class="progress">
@@ -252,63 +253,63 @@
         <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">My</span><span class="t-orange"> Projects</span></h1>
         <div class="row projects">
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://shop-react-zeta.vercel.app/" target="_blank"><img class="w-100" src="./img/shopping.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Tailwind</small>
                     <a class="d-block title" href="https://shop-react-zeta.vercel.app/">Shopping Website</a>
                 </div>
             </div>
             <div class="col-md-4 ">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in">
                     <a href="https://lagubitta-ashish-paudels-projects.vercel.app/" target="_blank"><img class="w-100" src="./img/lagubitta.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://lagubitta-ashish-paudels-projects.vercel.app/">Lagubitta News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://bankingkhabar.vercel.app/" target="_blank"><img class="w-100" src="./img/news2.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,NEXT JS,Tailwind</small>
                     <a class="d-block title" href="https://bankingkhabar.vercel.app/">Banking News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2" >
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/Laundary/" target="_blank"><img class="w-100" src="./img/laundary.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,NEXT JS,Tailwind</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/Laundary/">Laundary Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/plannepal/" target="_blank"><img class="w-100" src="./img/travel.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/plannepal/">Travel Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/Sanakisan/" target="_blank"><img class="w-100" src="./img/sanakisan.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/Sanakisan/">Sanakisan Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/chakrapath/" target="_blank"><img class="w-100" src="./img/chakkrapath.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/chakrapath/">Chakrapath News Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/RealEstate/" target="_blank"><img class="w-100" src="./img/realestate.jpg" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/RealEstate/">Realstate Website</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow rounded bgsec my-3 p-2">
+                <div class="shadow rounded bgsec my-3 p-2" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="https://ashishpaudel123.github.io/kitabyatra/" target="_blank"><img class="w-100" src="./img/kitabyatra.png" alt="Portfolio-image"></a>
                     <small>HTML,CSS,React JS,Bootstrap</small>
                     <a class="d-block title" href="https://ashishpaudel123.github.io/kitabyatra/">KitabYatra  Website</a>
@@ -321,7 +322,7 @@
     <!-- contact form start -->
     <section id="contact" class="container my-5">
     <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">Contact</span><span class="t-orange"> Me</span></h1>
-      <form class="row my-3 g-3 contact rounded" id="form">
+      <form class="row my-3 g-3 contact rounded" id="form" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-md-6">
           <label class="form-label" for="subject">Subject</label>
           <input class="form-control" type="text" name="subject" id="subject" required>
@@ -358,6 +359,7 @@
 
     </footer>
     <!-- footer end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

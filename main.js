@@ -1,3 +1,6 @@
+//Aos Animation
+AOS.init();
+
 // header js start
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -52,5 +55,25 @@ $(window).on('scroll',function(){
 });
 // linear progess bar js end
 
+// Change nav link color on scroll
+document.addEventListener("DOMContentLoaded", function () {
+    let sections = document.querySelectorAll("section");
+    let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
+    window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
 
+        sections.forEach((section) => {
+            let top = section.offsetTop - 100;
+            let height = section.offsetHeight;
+            let id = section.getAttribute("id");
+
+            if (scrollPosition >= top && scrollPosition < top + height) {
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+                document.querySelector(".navbar-nav a[href='#" + id + "']").classList.add("active");
+            }
+        });
+    });
+});

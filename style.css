@@ -9,6 +9,7 @@ body{
     font-family: "Poppins", sans-serif !important;
     background-color: #0f0a0a !important;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 header nav a{
     color: #fff !important;
@@ -134,11 +135,11 @@ a{
     color: #ff00ee;
 }
 
-.fixed-header nav a.active,
-.fixed-header nav a:focus,
-.fixed-header nav a.active{
+.navbar-nav .nav-link.active {
     color: #ff00ee !important;
+    font-weight: 500 !important;
 }
+
 
 @media (max-width:471px) {
     .myname{
@@ -286,6 +287,12 @@ img.w-30vw{
 .card:hover p.card-paragraph{
     color:#00d5ff !important ;
     opacity: 100% !important;
+}
+
+@media (max-width:768px) {
+    .card-paragraph{
+        text-align: start !important;
+    }
 }
 /* education box/card css end */
 
@@ -482,6 +489,13 @@ footer a i{
     .myphoto img{
         width: 20vw !important;
     }
+}
+
+
+.fixed-header nav a.active,
+.fixed-header nav a:focus,
+.fixed-header nav a.active{
+    color: #ff00ee !important;
 }
 
 
