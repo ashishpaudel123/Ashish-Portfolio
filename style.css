@@ -104,6 +104,10 @@ a{
     }
 }
 /* header css start */
+
+.navbar-toggler-icon {
+    filter: invert(100%) brightness(100%);
+}
 .fixed-header {
     position: fixed;
     top: 0;
@@ -187,6 +191,10 @@ a{
 .f{
     flex-wrap: wrap-reverse;
 }
+.text-dim{
+    color: #ffffff;
+    opacity: 90% !important;
+}
 
 @media (max-width:600px) {
     .myphoto img{
@@ -255,25 +263,41 @@ img.w-30vw{
     background:linear-gradient(#ff00ee8c, #00000088);
 }
 /* scoial icons end */
+
+/* education box/card css start */
 .card{
     background-color: #1c1a1a !important;
     color: white !important;
     margin: 20px;
     padding: 25px;
 }
-.card:hover{
-    box-shadow: 0 0 5px #ff005e, 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 6px #ff005e, 0 0 8px #ff005e;
-    animation: icon-glow 1.5s infinite alternate;
-}
-
 .card-title{
     font-size: 20px;
 }
 .card-paragraph{
     color:#00d5ff !important ;
+    opacity: 90%;
     font-size: 13px;
     text-align: justify !important;
 }
+@keyframes card-glow {
+    0% {
+        box-shadow: 0 0 1px #ff00ee, 0 0 2px #ff00ee, 0 0 3px #ff00ee, 0 0 4px #ff00ee, 0 0 5px #ff00ee;
+    }
+    100% {
+        box-shadow: 0 0 1px #079ebc9f, 0 0 2px #09d6469f, 0 0 3px #05ec979f, 0 0 4px #17c7ea9f, 0 0 5px #00d5ffe0;
+    }
+}
+.card:hover{
+    box-shadow: 0 0 5px #ff00ee, 0 0 2px #ff00ee, 0 0 4px #ff00ee, 0 0 6px #ff00ee, 0 0 8px #ff00ee;
+}
+.card:hover p.card-paragraph{
+    color:#00d5ff !important ;
+    opacity: 100% !important;
+}
+/* education box/card css end */
+
+
 
 /* typewriter css start */
 .wrapper {
@@ -358,9 +382,7 @@ img.w-30vw{
     }
 }
 .r-filter{
-    /* filter: drop-shadow(0 0 8rem #ff00ee); */
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
-    /* animation: about-box-glow 2.5s infinite alternate; */
 }
 .shadow-red{
     box-shadow: 0 0 1px #ff005e, 0 0 2px #ff005e, 0 0 3px #ff005e, 0 0 4px #ff005e, 0 0 5px #ff005e;
@@ -437,9 +459,6 @@ footer a i{
     animation: icon-glow 1.5s infinite alternate;
 }
 
-.navbar-toggler-icon {
-    filter: invert(100%) brightness(100%);
-}
 
 
 @media (min-width:768px) {
