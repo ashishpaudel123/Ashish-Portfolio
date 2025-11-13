@@ -875,33 +875,139 @@
 
     <!-- contact form start -->
     <section id="contact" class="container my-5">
-        <h1 class="fw-bold font-50 text-center py-5"><span class="text-light">Contact</span><span class="t-orange">
-                Me</span></h1>
-        <form class="row my-3 g-3 contact rounded" id="form" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-md-6">
-                <label class="form-label" for="subject">Subject</label>
-                <input class="form-control" type="text" name="subject" id="subject" required>
+        <h1 class="fw-bold font-50 text-center py-5">
+            <span class="text-light">Get In</span>
+            <span class="t-orange"> Touch</span>
+        </h1>
+        
+        <div class="contact-wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row g-4">
+                <!-- Contact Info Cards -->
+                <div class="col-lg-4">
+                    <div class="contact-info-section">
+                        <div class="contact-info-header">
+                            <i class="fa-solid fa-paper-plane t-orange"></i>
+                            <h3>Let's Connect</h3>
+                            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                        </div>
+                        
+                        <div class="contact-info-cards">
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>Email</h4>
+                                    <p>ashishpaudel206058@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>Location</h4>
+                                    <p>Kathmandu, Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social-links">
+                            <p class="social-connect-label">
+                                <i class="fa-solid fa-share-nodes me-2"></i>
+                                Social Profiles
+                            </p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="https://www.linkedin.com/in/ashish-paudel-2b72962ab/" target="_blank" 
+                                   class="contact-social-icon linkedin" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="http://facebook.com/ashishpaudel08" target="_blank" 
+                                   class="contact-social-icon facebook" title="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ashishpaudel123/" target="_blank" 
+                                   class="contact-social-icon instagram" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://github.com/ashishpaudel123" target="_blank" 
+                                   class="contact-social-icon github" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <form class="contact-form" id="form">
+                        <div class="form-header">
+                            <i class="fa-solid fa-message t-orange"></i>
+                            <h3>Send Me a Message</h3>
+                        </div>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">
+                                        <i class="fa-solid fa-user me-2"></i>Your Name
+                                    </label>
+                                    <input class="form-control" type="text" name="name" id="name" 
+                                           placeholder="Enter your full name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">
+                                        <i class="fa-solid fa-envelope me-2"></i>Email Address
+                                    </label>
+                                    <input class="form-control" type="email" name="email" id="email" 
+                                           placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="mobile">
+                                        <i class="fa-solid fa-phone me-2"></i>Phone Number
+                                    </label>
+                                    <input class="form-control" type="tel" name="mobile" id="mobile" 
+                                           placeholder="+977 98XXXXXXXX" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="subject">
+                                        <i class="fa-solid fa-tag me-2"></i>Subject
+                                    </label>
+                                    <input class="form-control" type="text" name="subject" id="subject" 
+                                           placeholder="What's this about?" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="message">
+                                        <i class="fa-solid fa-comment-dots me-2"></i>Your Message
+                                    </label>
+                                    <textarea class="form-control" name="message" id="message" 
+                                              placeholder="Tell me about your project or inquiry..." rows="6" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="submit-btn" type="submit" id="button">
+                                    <span class="btn-text">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                                    </span>
+                                    <span class="btn-icon">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-md-6">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control" type="text" name="name" id="name" required>
-            </div>
-            <div class="col-md-6">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control" type="text" name="email" id="email" required>
-            </div>
-            <div class="col-md-6">
-                <label class="form-label" for="mobile">Mobile</label>
-                <input class="form-control" type="text" name="mobile" id="mobile" required>
-            </div>
-            <div class="col-12">
-                <textarea class="form-control" name="message" id="message" placeholder="Write a message" rows="5"
-                    required></textarea>
-                <button class="border-0 w-100 my-3 rounded px-3 py-2 text-white fw-bold b-orange" type="submit"
-                    id="button" value="Send Email">Send Email</button>
-            </div>
-
-        </form>
+        </div>
     </section>
     <!-- contact form end -->
 
