@@ -500,3 +500,169 @@ footer a i {
 .fixed-header nav a.active {
   color: #ff00ee !important;
 }
+
+/* experience section css start */
+.experience-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-container {
+  background: linear-gradient(135deg, #1a1a1a 0%, #262222 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 0, 238, 0.1);
+  border: 1px solid rgba(255, 0, 238, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.experience-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff00ee, #00d5ff, #ff00ee);
+  background-size: 200% auto;
+  animation: gradient-shift 3s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.experience-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(255, 0, 238, 0.2);
+}
+
+.experience-header h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.experience-header h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.experience-date .badge {
+  background: linear-gradient(135deg, #ff00ee, #ff00ee);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(255, 0, 238, 0.3);
+}
+
+.experience-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+.experience-projects h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 0, 238, 0.3);
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 3px solid #ff00ee;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 0, 238, 0.1), transparent);
+  transition: width 0.3s ease;
+}
+
+.project-card:hover::before {
+  width: 100%;
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(255, 0, 238, 0.2);
+}
+
+.project-header h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.experience-skills h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tech-badge {
+  background: rgba(255, 0, 238, 0.1);
+  color: #ff00ee;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 0, 238, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.tech-badge:hover {
+  background: rgba(255, 0, 238, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 0, 238, 0.3);
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 25px;
+  }
+  
+  .experience-header h3 {
+    font-size: 22px;
+  }
+  
+  .experience-header h4 {
+    font-size: 18px;
+  }
+  
+  .experience-date .badge {
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+  .project-card {
+    padding: 15px;
+  }
+  
+  .tech-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+/* experience section css end */
