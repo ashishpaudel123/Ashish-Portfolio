@@ -746,8 +746,15 @@ a {
 @media (max-width: 767px) {
   .hero-section {
     min-height: auto;
+    margin-top: 0px !important;
   }
-  
+  .hero-text-content {
+    padding-top: 0px !important;
+    margin-top: -30px !important;
+  }
+  .fixed-header nav {
+  padding: 0px 0px;
+}
   .hero-name {
     font-size: 2rem;
   }
@@ -765,8 +772,10 @@ a {
     text-align: left;
   }
   
+  .hero-image-wrapper,
+  .myphoto,
   .myphoto img {
-    max-width: 250px;
+    display: none !important;
   }
   
   .cta-primary,
@@ -805,17 +814,14 @@ a {
   }
   
   .floating-element {
-    display: none;
+    font-size: 24px;
+    opacity: 0.6;
   }
 }
 
 @media (max-width: 480px) {
   .hero-name {
     font-size: 1.75rem;
-  }
-  
-  .myphoto img {
-    max-width: 220px;
   }
   
   .hero-highlights {
@@ -845,6 +851,32 @@ a {
     width: 42px;
     height: 42px;
     font-size: 16px;
+  }
+  
+  .floating-element {
+    font-size: 20px;
+    opacity: 0.55;
+  }
+  
+  /* Tighter positions for very small screens */
+  .element-4 {
+    top: 1%;
+    left: 1%;
+  }
+  
+  .element-1 {
+    top: 1%;
+    right: 1%;
+  }
+  
+  .element-2 {
+    bottom: 5%;
+    left: 1%;
+  }
+  
+  .element-3 {
+    bottom: 5%;
+    right: 1%;
   }
 }
 
