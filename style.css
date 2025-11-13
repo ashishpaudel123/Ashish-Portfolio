@@ -2433,6 +2433,9 @@ form.contact::before {
   form.contact {
     padding: 50px 100px;
   }
+  .hero-section{
+ margin-bottom: 20px;
+  }
 }
 
 form.contact label {
