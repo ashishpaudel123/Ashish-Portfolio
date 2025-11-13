@@ -772,21 +772,15 @@ a {
     text-align: left;
   }
   
-  .hero-image-wrapper,
-  .myphoto,
-  .myphoto img {
-    display: none !important;
-  }
-  
   .cta-primary,
   .cta-secondary {
     padding: 12px 24px;
     font-size: 14px;
   }
   
-  .social-divider {
+  /* .social-divider {
     display: none;
-  }
+  } */
   
   .social-label {
     font-size: 14px;
